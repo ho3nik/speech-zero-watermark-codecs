@@ -1,0 +1,26 @@
+{
+ "thresholds": {
+  "Salayani": 0.4580078125
+ },
+ "train_tasks": {
+  "Salayani": [
+   "amp_0.7",
+   "awgn_20dB",
+   "highpass_200",
+   "lowpass_4k",
+   "mp3_32k",
+   "requant_8bit",
+   "resample_8k"
+  ]
+ },
+ "impostor": {
+  "Salayani": {
+   "mean": 0.48580074853433836,
+   "std": 0.011214458183953186,
+   "min": 0.4404296875,
+   "n_pairs": 5970,
+   "same_speaker_mean": 0.4858756673994975,
+   "other_speaker_mean": 0.4857632891017588
+  }
+ }
+}

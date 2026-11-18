@@ -1,0 +1,16 @@
+scheme,family,n_bits,fraction
+SEL-classical,philips33_300-4000,473,0.4619140625
+SEL-classical,philips65_300-2000,551,0.5380859375
+SEL-codec,dwtdct32,36,0.03515625
+SEL-codec,mfcc24,534,0.521484375
+SEL-codec,philips33_300-4000,313,0.3056640625
+SEL-codec,philips65_300-2000,141,0.1376953125
+SEL-codec-mean,dwtdct32,3,0.0029296875
+SEL-codec-mean,mfcc24,12,0.01171875
+SEL-codec-mean,philips33_300-4000,525,0.5126953125
+SEL-codec-mean,philips65_300-2000,484,0.47265625
+SEL-codec+W,dwtdct32,2,0.001953125
+SEL-codec+W,mfcc24,233,0.2275390625
+SEL-codec+W,philips33_300-4000,148,0.14453125
+SEL-codec+W,philips65_300-2000,12,0.01171875
+SEL-codec+W,wavlm_lsh,629,0.6142578125

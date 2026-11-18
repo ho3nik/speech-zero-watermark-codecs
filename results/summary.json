@@ -1,0 +1,174 @@
+{
+  "n_train": 80,
+  "n_test": 398,
+  "fpr": 0.01,
+  "attacks": [
+    "resample_8k",
+    "mp3_128k",
+    "mp3_32k",
+    "opus_16k",
+    "opus_12k",
+    "opus_6k",
+    "awgn_20dB",
+    "lowpass_4k",
+    "highpass_200",
+    "amp_0.7",
+    "requant_8bit",
+    "pitch_+2st",
+    "delay_7ms",
+    "delay_23ms",
+    "delay_37ms",
+    "delay_250ms",
+    "crop_10pct",
+    "stretch_+2pct",
+    "stretch_-2pct",
+    "stretch_+5pct",
+    "stretch_-5pct",
+    "encodec_24k",
+    "encodec_12k",
+    "encodec_6k",
+    "encodec_3k",
+    "encodec_1.5k",
+    "dac_12cb",
+    "dac_6cb",
+    "dac_3cb",
+    "knnvc_self",
+    "knnvc_cross",
+    "speecht5_cross"
+  ],
+  "train_tasks": {
+    "SEL-classical": [
+      "resample_8k",
+      "mp3_32k",
+      "awgn_20dB",
+      "lowpass_4k",
+      "highpass_200",
+      "requant_8bit"
+    ],
+    "SEL-codec": [
+      "resample_8k",
+      "mp3_32k",
+      "awgn_20dB",
+      "lowpass_4k",
+      "highpass_200",
+      "requant_8bit",
+      "encodec_1.5k",
+      "encodec_6k"
+    ],
+    "SEL-codec-mean": [
+      "resample_8k",
+      "mp3_32k",
+      "awgn_20dB",
+      "lowpass_4k",
+      "highpass_200",
+      "requant_8bit",
+      "encodec_1.5k",
+      "encodec_6k"
+    ]
+  },
+  "thresholds": {
+    "DWT-DCT": 0.431640625,
+    "Philips": 0.4580078125,
+    "MFCC": 0.447265625,
+    "WavLM-LSH": 0.443359375,
+    "PHIL+MFCC": 0.4560546875,
+    "POOL-all": 0.47641226649284363,
+    "POOL-random": 0.458984375,
+    "SEL-classical": 0.455078125,
+    "SEL-codec": 0.455078125,
+    "SEL-codec-mean": 0.4541015625,
+    "SEL-codec+W": 0.44921875
+  },
+  "impostor": {
+    "DWT-DCT": {
+      "mean": 0.4934020936489105,
+      "std": 0.026443518698215485,
+      "min": 0.35546875,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.48246443271636963,
+      "other_speaker_mean": 0.49394914507865906
+    },
+    "Philips": {
+      "mean": 0.5000213384628296,
+      "std": 0.01752057671546936,
+      "min": 0.427734375,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.4997098743915558,
+      "other_speaker_mean": 0.500036895275116
+    },
+    "MFCC": {
+      "mean": 0.4999988079071045,
+      "std": 0.020981106907129288,
+      "min": 0.388671875,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.5000513792037964,
+      "other_speaker_mean": 0.499996155500412
+    },
+    "WavLM-LSH": {
+      "mean": 0.49578210711479187,
+      "std": 0.021194806322455406,
+      "min": 0.392578125,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.49574676156044006,
+      "other_speaker_mean": 0.49578386545181274
+    },
+    "PHIL+MFCC": {
+      "mean": 0.499966561794281,
+      "std": 0.018200693652033806,
+      "min": 0.40234375,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.49981704354286194,
+      "other_speaker_mean": 0.4999740421772003
+    },
+    "POOL-all": {
+      "mean": 0.4990848898887634,
+      "std": 0.00924679171293974,
+      "min": 0.4540264308452606,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.4944682717323303,
+      "other_speaker_mean": 0.4993158280849457
+    },
+    "POOL-random": {
+      "mean": 0.49923622608184814,
+      "std": 0.016889331862330437,
+      "min": 0.42578125,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.49540266394615173,
+      "other_speaker_mean": 0.4994279742240906
+    },
+    "SEL-classical": {
+      "mean": 0.49983227252960205,
+      "std": 0.018718741834163666,
+      "min": 0.416015625,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.49924999475479126,
+      "other_speaker_mean": 0.49986138939857483
+    },
+    "SEL-codec": {
+      "mean": 0.49991753697395325,
+      "std": 0.01869848184287548,
+      "min": 0.41015625,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.4987914264202118,
+      "other_speaker_mean": 0.4999738335609436
+    },
+    "SEL-codec-mean": {
+      "mean": 0.4998796582221985,
+      "std": 0.01880636066198349,
+      "min": 0.419921875,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.49909064173698425,
+      "other_speaker_mean": 0.4999191164970398
+    },
+    "SEL-codec+W": {
+      "mean": 0.4988722801208496,
+      "std": 0.020191408693790436,
+      "min": 0.37109375,
+      "n_pairs": 79003,
+      "same_speaker_mean": 0.4985329508781433,
+      "other_speaker_mean": 0.4988892376422882
+    }
+  },
+  "elapsed_s": 783.8426196575165,
+  "pool_size": 6656
+}

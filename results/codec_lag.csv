@@ -1,0 +1,9 @@
+attack,lag_median,lag_abs_max
+mp3_32k,0.0,0
+opus_16k,0.0,3
+opus_6k,1.0,2
+encodec_24k,0.0,0
+encodec_6k,0.0,0
+encodec_1.5k,0.0,2
+dac_12cb,-8.0,8
+dac_3cb,-8.0,9

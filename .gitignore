@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+cache/
+data/clips/
+data/vc_matching/
+ext/
+*.wav
+*.flac

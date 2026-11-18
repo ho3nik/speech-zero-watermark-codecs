@@ -1,0 +1,18 @@
+# Versions the results were produced with (CPU only). Newer versions are likely to work.
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.5
+soundfile==0.14.0
+librosa==1.0.0
+PyWavelets==1.8.0
+scikit-learn
+matplotlib
+torch==2.15.0
+torchaudio==2.11.1
+transformers==5.22.1
+encodec==0.1.1
+descript-audio-codec==1.0.0
+galois==0.4.11
+pystoi==0.4.1
+pesq==0.0.4
+pytest
